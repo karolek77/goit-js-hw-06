@@ -52,6 +52,11 @@ buttonCreate.addEventListener("click", () => {
 
 let destroyedDivsCount = 0;
 function destroyBoxes() {
+  /*const colorBox = document.querySelectorAll(".item");
+  colorBox.forEach((item) => {
+    item.remove();
+    destroyedDivsCount++;
+  });*/
   while (boxElementColor.firstChild) {
     boxElementColor.removeChild(boxElementColor.firstChild);
     destroyedDivsCount++;
